@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth global transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Light + Dark Mode */
+body {
+  @apply font-inter bg-gray-50 text-gray-900 dark:bg-slate-900 dark:text-gray-100;
+}
+
+/* Optional: Make all cards auto-dark */
+.card {
+  @apply bg-white dark:bg-slate-800 shadow rounded-lg;
+}
+
+/* Optional: Inputs adapt to theme */
+input, textarea, select {
+  @apply bg-white dark:bg-slate-800 border dark:border-slate-700 text-gray-900 dark:text-gray-100 rounded-md;
+}
+
+/* Optional: Admin table dark mode tweaks */
+.table-header {
+  @apply bg-gray-100 dark:bg-slate-700 text-gray-800 dark:text-gray-200;
+}
+
+.table-row {
+  @apply border-b border-gray-200 dark:border-slate-700;
+}
